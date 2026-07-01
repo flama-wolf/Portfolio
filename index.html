@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dheeman Shrivastav | Portfolio</title>
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Portfolio of Dheeman Shrivastav - Graphic Designer, Video Editor, and 3D Artist in a Retro 90s Desktop / Pixel Art theme.">
+  <meta name="keywords" content="Portfolio, Graphic Design, Video Editing, 3D Art, Retro Web, Pixel Art, Windows XP, Bliss">
+  <meta name="author" content="Dheeman Shrivastav">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Retro Boot / Loading Screen -->
+  <div id="boot-screen" class="boot-screen">
+    <div class="boot-logo">
+      <svg viewBox="0 0 100 100" class="retro-window-logo">
+        <path d="M10,10 L45,15 L45,45 L10,40 Z" fill="#F25022" />
+        <path d="M55,16 L90,21 L90,46 L55,45 Z" fill="#7FBA00" />
+        <path d="M10,48 L45,47 L45,77 L10,82 Z" fill="#00A4EF" />
+        <path d="M55,48 L90,49 L90,75 L55,76 Z" fill="#FFB900" />
+      </svg>
+      <h1>RetroOS</h1>
+      <p class="subtitle">System version 9.21.2026</p>
+    </div>
+    <div class="boot-loader">
+      <div class="boot-loader-progress"></div>
+    </div>
+    <div class="boot-status">Loading systems modules...</div>
+  </div>
+
+  <!-- Custom Cursor & Star Trail Container -->
+  <div id="cursor-trail-container"></div>
+
+  <!-- Desktop Environment -->
+  <div id="desktop" class="desktop">
+    
+    <!-- Desktop Icons Grid -->
+    <div class="desktop-icons">
+      <div class="desktop-icon" id="icon-welcome" onclick="openWindow('welcome-window')">
+        <div class="icon-image welcome-icon">
+          <svg viewBox="0 0 48 48">
+            <path d="M8,6 H32 L40,14 V42 H8 Z" fill="#FFF" stroke="#0055ff" stroke-width="3" />
+            <path d="M30,6 V14 H40" fill="none" stroke="#0055ff" stroke-width="3" />
+            <circle cx="20" cy="22" r="5" fill="none" stroke="#0055ff" stroke-width="2"/>
+            <path d="M12,36 Q20,28 28,36" fill="none" stroke="#0055ff" stroke-width="2"/>
+          </svg>
+        </div>
+        <span class="icon-label">Welcome.doc</span>
+      </div>
+
+      <div class="desktop-icon" id="icon-languages" onclick="openWindow('languages-window')">
+        <div class="icon-image languages-icon">
+          <svg viewBox="0 0 48 48">
+            <path d="M8,6 H32 L40,14 V42 H8 Z" fill="#FFF" stroke="#0055ff" stroke-width="3" />
+            <path d="M30,6 V14 H40" fill="none" stroke="#0055ff" stroke-width="3" />
+            <line x1="14" y1="20" x2="22" y2="20" stroke="#0055ff" stroke-width="3"/>
+            <line x1="26" y1="20" x2="34" y2="20" stroke="#0055ff" stroke-width="2"/>
+            <line x1="14" y1="28" x2="22" y2="28" stroke="#0055ff" stroke-width="3"/>
+            <line x1="26" y1="28" x2="34" y2="28" stroke="#0055ff" stroke-width="2"/>
+          </svg>
+        </div>
+        <span class="icon-label">Languages.doc</span>
+      </div>
+
+      <div class="desktop-icon" id="icon-education" onclick="openWindow('education-window')">
+        <div class="icon-image education-icon">
+          <svg viewBox="0 0 48 48">
+            <path d="M8,6 H32 L40,14 V42 H8 Z" fill="#FFF" stroke="#0055ff" stroke-width="3" />
+            <path d="M30,6 V14 H40" fill="none" stroke="#0055ff" stroke-width="3" />
+            <path d="M12,24 L24,18 L36,24 L24,30 Z" fill="#0055ff" />
+            <line x1="24" y1="28" x2="24" y2="36" stroke="#0055ff" stroke-width="3" />
+            <line x1="36" y1="24" x2="36" y2="34" stroke="#ffaa00" stroke-width="2" />
+          </svg>
+        </div>
+        <span class="icon-label">Education.doc</span>
+      </div>
+
+      <div class="desktop-icon" id="icon-skills" onclick="openWindow('skills-window')">
+        <div class="icon-image skills-icon">
+          <svg viewBox="0 0 48 48">
+            <path d="M8,6 H32 L40,14 V42 H8 Z" fill="#FFF" stroke="#0055ff" stroke-width="3" />
+            <path d="M30,6 V14 H40" fill="none" stroke="#0055ff" stroke-width="3" />
+            <circle cx="24" cy="26" r="6" fill="none" stroke="#0055ff" stroke-width="3" />
+            <path d="M24,17 V20 M24,32 V35 M15,26 H18 M30,26 H33" stroke="#0055ff" stroke-width="3" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <span class="icon-label">Skills.doc</span>
+      </div>
+
+      <div class="desktop-icon" id="icon-experience" onclick="openWindow('experience-window')">
+        <div class="icon-image experience-icon">
+          <svg viewBox="0 0 48 48">
+            <path d="M8,6 H32 L40,14 V42 H8 Z" fill="#FFF" stroke="#0055ff" stroke-width="3" />
+            <path d="M30,6 V14 H40" fill="none" stroke="#0055ff" stroke-width="3" />
+            <rect x="14" y="22" width="20" height="14" fill="none" stroke="#0055ff" stroke-width="2" rx="2" />
+            <path d="M18,22 V18 H30 V22" fill="none" stroke="#0055ff" stroke-width="2" />
+          </svg>
+        </div>
+        <span class="icon-label">Experience.doc</span>
+      </div>
+
+      <div class="desktop-icon" id="icon-contact" onclick="openWindow('contact-window')">
+        <div class="icon-image contact-icon">
+          <svg viewBox="0 0 48 48">
+            <path d="M8,6 H32 L40,14 V42 H8 Z" fill="#FFF" stroke="#0055ff" stroke-width="3" />
+            <path d="M30,6 V14 H40" fill="none" stroke="#0055ff" stroke-width="3" />
+            <path d="M14,18 C14,28 20,34 30,34 C33,34 34,31 32,29 L28,26 L26,28 C23,26 21,24 20,22 L22,20 L19,16 C17,14 14,15 14,18 Z" fill="#0055ff" />
+          </svg>
+        </div>
+        <span class="icon-label">Contact.doc</span>
+      </div>
+
+      <div class="desktop-icon" id="icon-cv" onclick="downloadCV()">
+        <div class="icon-image cv-icon">
+          <svg viewBox="0 0 48 48">
+            <path d="M8,6 H32 L40,14 V42 H8 Z" fill="#FFF" stroke="#0055ff" stroke-width="3" />
+            <path d="M30,6 V14 H40" fill="none" stroke="#0055ff" stroke-width="3" />
+            <text x="14" y="30" font-family="var(--font-pixel)" font-size="10" fill="#d00">PDF</text>
+            <path d="M14,34 H34" stroke="#d00" stroke-width="2" />
+          </svg>
+        </div>
+        <span class="icon-label">CV.pdf</span>
+      </div>
+
+      <!-- Theme Changer app icon -->
+      <div class="desktop-icon" id="icon-theme" onclick="openWindow('theme-window')">
+        <div class="icon-image theme-icon">
+          <svg viewBox="0 0 48 48">
+            <rect x="6" y="8" width="36" height="24" rx="2" fill="#FFF" stroke="#0055ff" stroke-width="3"/>
+            <rect x="10" y="12" width="28" height="16" fill="#0055ff"/>
+            <path d="M18,32 L14,40 H34 L30,32 Z" fill="#FFF" stroke="#0055ff" stroke-width="3"/>
+          </svg>
+        </div>
+        <span class="icon-label">Display.exe</span>
+      </div>
+
+      <!-- Extra Apps -->
+      <div class="desktop-icon" id="icon-paint" onclick="openWindow('paint-window')">
+        <div class="icon-image paint-icon">
+          <svg viewBox="0 0 48 48">
+            <path d="M6,24 C6,12 16,6 26,6 C34,6 42,12 42,20 C42,26 38,30 34,30 C32,30 30,28 30,26 C30,24 32,22 32,20 C32,16 28,12 24,12 C18,12 12,18 12,26 C12,34 20,40 28,40 C32,40 36,38 38,36" fill="none" stroke="#ff0088" stroke-width="3" />
+            <circle cx="16" cy="18" r="3" fill="#ff2200" />
+            <circle cx="22" cy="16" r="3" fill="#ffaa00" />
+            <circle cx="28" cy="18" r="3" fill="#00ccff" />
+            <circle cx="24" cy="24" r="3" fill="#00cc55" />
+          </svg>
+        </div>
+        <span class="icon-label">Retro Paint</span>
+      </div>
+
+      <div class="desktop-icon" id="icon-music" onclick="openWindow('music-window')">
+        <div class="icon-image music-icon">
+          <svg viewBox="0 0 48 48">
+            <circle cx="24" cy="24" r="18" fill="#FFF" stroke="#ffaa00" stroke-width="3" />
+            <circle cx="24" cy="24" r="6" fill="none" stroke="#ffaa00" stroke-width="3" />
+            <path d="M12,24 A12,12 0 0,1 36,24" fill="none" stroke="#ff0055" stroke-dasharray="4,4" stroke-width="2" />
+            <path d="M16,16 L32,32" stroke="#00ccff" stroke-width="2" />
+          </svg>
+        </div>
+        <span class="icon-label">Synth Player</span>
+      </div>
+
+      <div class="desktop-icon" id="icon-readme" onclick="openWindow('readme-window')">
+        <div class="icon-image readme-icon">
+          <svg viewBox="0 0 48 48">
+            <path d="M10,8 H38 V40 H10 Z" fill="#FFF" stroke="#444" stroke-width="3" />
+            <path d="M10,8 H38 V14 H10 Z" fill="#444" />
+            <line x1="14" y1="20" x2="34" y2="20" stroke="#888" stroke-width="2" />
+            <line x1="14" y1="26" x2="34" y2="26" stroke="#888" stroke-width="2" />
+            <line x1="14" y1="32" x2="34" y2="32" stroke="#888" stroke-width="2" />
+          </svg>
+        </div>
+        <span class="icon-label">README.txt</span>
+      </div>
+    </div>
+
+    <!-- Active Windows Area -->
+    <div id="windows-container" class="windows-container">
+
+      <!-- ================= 1. WELCOME WINDOW ================= -->
+      <div id="welcome-window" class="window active-window" style="top: 20px; left: 18%; width: 550px; z-index: 10;">
+        <div class="window-header title-bar" onmousedown="startDrag(event, 'welcome-window')" ontouchstart="startDrag(event, 'welcome-window')">
+          <div class="title-bar-text">Welcome.doc</div>
+          <div class="title-bar-controls">
+            <button class="control-btn min-btn" onclick="minimizeWindow('welcome-window')" aria-label="Minimize"></button>
+            <button class="control-btn max-btn" onclick="maximizeWindow('welcome-window')" aria-label="Maximize"></button>
+            <button class="control-btn close-btn" onclick="closeWindow('welcome-window')" aria-label="Close"></button>
+          </div>
+        </div>
+        <div class="window-body">
+          <div class="about-window">
+            <div class="about-header title-bar">
+              <div class="about-controls">
+                <span class="control-dot red"></span>
+                <span class="control-dot yellow"></span>
+                <span class="control-dot green"></span>
+              </div>
+              <div class="about-title">WWW.AjouhiMouad.ME</div>
+            </div>
+            <div class="about-body">
+              <div class="crown-overlay">👑</div>
+              
+              <div class="about-intro">
+                <div class="about-info">
+                  <h1 class="resume-name" style="font-size: 1.7rem;">AJOUHI<br>Mouad</h1>
+                  <p class="subtitle-desc" style="font-family: var(--font-pixel); color: #555; font-size: 0.8rem; margin-top: 4px;">Cybersecurity & LLM & fashion enthusiast </p>
+                </div>
+                
+                <div class="about-avatar-container">
+                  <svg viewBox="0 0 100 100" class="about-avatar-svg">
+                    <circle cx="50" cy="50" r="46" fill="#f0f5ff" stroke="#0055ff" stroke-width="2.5" />
+                    <path d="M22,38 Q18,22 35,16 Q45,12 55,14 Q70,10 78,20 Q83,28 82,36 Q83,38 80,42 Q78,34 76,32 Q74,28 65,30 Q60,32 50,30 Q40,28 35,32 Q30,34 26,38 Z" fill="#111" stroke="#111" stroke-width="1.5" />
+                    <path d="M78,20 Q70,30 68,36 Q64,40 60,38" fill="none" stroke="#111" stroke-width="2" />
+                    <path d="M26,38 Q24,55 30,68 Q38,80 50,80 Q62,80 70,68 Q76,55 74,38 Z" fill="#FFF" stroke="#0055ff" stroke-width="2.5" />
+                    <ellipse cx="42" cy="46" rx="3" ry="5" fill="#111" />
+                    <ellipse cx="58" cy="46" rx="3" ry="5" fill="#111" />
+                    <path d="M50,48 L48,54 L52,54" fill="none" stroke="#0055ff" stroke-width="2" stroke-linecap="round" />
+                    <path d="M44,60 Q50,66 56,60" fill="none" stroke="#0055ff" stroke-width="2.5" stroke-linecap="round" />
+                    <path d="M26,45 C23,45 23,52 26,52" fill="#FFF" stroke="#0055ff" stroke-width="2" />
+                    <path d="M74,45 C77,45 77,52 74,52" fill="#FFF" stroke="#0055ff" stroke-width="2" />
+                    <path d="M42,80 L42,86 L58,86 L58,80 Z" fill="#FFF" stroke="#0055ff" stroke-width="2" />
+                    <path d="M30,86 Q50,94 70,86 L74,98 L26,98 Z" fill="#FFF" stroke="#0055ff" stroke-width="2" />
+                    <path d="M42,86 Q50,92 58,86" fill="none" stroke="#0055ff" stroke-width="2" />
+                    <path d="M36,92 L38,98" stroke="#0055ff" stroke-width="1.5" />
+                    <path d="M64,92 L62,98" stroke="#0055ff" stroke-width="1.5" />
+                  </svg>
+                </div>
+              </div>
+
+              <p class="about-bio" style="font-size: 0.9rem; line-height: 1.5; margin-top: 10px;">
+               Passionate software developer and cybersecurity enthusiast with experience in full-stack development, Python, JavaScript, C++, and modern web technologies. Strong interest in mathematics, computer science, artificial intelligence, ethical hacking, and video game development. Experienced in building AI-powered applications, desktop software, web platforms, and interactive games while continuously exploring new technologies through personal projects, hackathons, CTF competitions, and STEM challenges. Committed to solving complex problems, creating innovative solutions, and continuously expanding technical expertise.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="win-resizer" onmousedown="startResize(event, 'welcome-window')" ontouchstart="startResize(event, 'welcome-window')"></div>
+      </div>
+
+      <!-- ================= 2. LANGUAGES & LIKINGS WINDOW ================= -->
+      <div id="languages-window" class="window" style="top: 60px; left: 22%; width: 420px; z-index: 5; display: none;">
+        <div class="window-header title-bar" onmousedown="startDrag(event, 'languages-window')" ontouchstart="startDrag(event, 'languages-window')">
+          <div class="title-bar-text">Languages & Likings.doc</div>
+          <div class="title-bar-controls">
+            <button class="control-btn min-btn" onclick="minimizeWindow('languages-window')" aria-label="Minimize"></button>
+            <button class="control-btn max-btn" onclick="maximizeWindow('languages-window')" aria-label="Maximize"></button>
+            <button class="control-btn close-btn" onclick="closeWindow('languages-window')" aria-label="Close"></button>
+          </div>
+        </div>
+        <div class="window-body">
+          <div class="resume-section languages-section">
+            <h2 class="section-title title-languages">LANGUAGES</h2>
+            <div class="rating-row" style="margin-bottom: 8px;">
+              <span class="rating-label">English</span>
+              <span class="rating-blocks">
+                <span class="block filled">■</span>
+                <span class="block filled">■</span>
+                <span class="block filled">■</span>
+                <span class="block filled">■</span>
+                <span class="block filled">■</span>
+              </span>
+            </div>
+            <div class="rating-row" style="margin-bottom: 8px;">
+              <span class="rating-label">French</span>
+              <span class="rating-blocks">
+                <span class="block filled">■</span>
+                <span class="block filled">■</span>
+                <span class="block filled">■</span>
+                <span class="block filled">■</span>
+                <span class="block filled">■</span>
+              </span>
+            </div>
+            
+            <div class="rating-row" style="margin-bottom: 8px;">
+              <span class="rating-label">Arabic</span>
+              <span class="rating-blocks">
+                <span class="block filled">■</span>
+                <span class="block filled">■</span>
+                <span class="block filled">■</span>
+                <span class="block filled">■</span>
+                <span class="block filled">■</span>
+              </span>
+            </div>
+            <div class="rating-row">
+              <span class="rating-label">Amazigh</span>
+              <span class="rating-blocks">
+                <span class="block filled">■</span>
+                <span class="block filled">■</span>
+                <span class="block filled">■</span>
+                <span class="block filled">■</span>
+                <span class="block filled">■</span>
+              </span>
+            </div>
+            <div class="rating-row" style="margin-bottom: 8px;">
+              <span class="rating-label">Darija</span>
+              <span class="rating-blocks">
+                <span class="block filled">■</span>
+                <span class="block filled">■</span>
+                <span class="block filled">■</span>
+                <span class="block filled">■</span>
+                <span class="block filled">■</span>
+              </span>
+            </div>
+            <div class="rating-row" style="margin-bottom: 8px;">
+              <span class="rating-label">Allemand</span>
+              <span class="rating-blocks">
+                <span class="block filled">■</span>
+                <span class="block filled">■</span>
+                <span class="block filled">■</span>
+                <span class="block filled">□</span>
+                <span class="block filled">□</span>
+              </span>
+            </div>
+            <div class="rating-row">
+              <span class="rating-label">Portuguese</span>
+              <span class="rating-blocks">
+                <span class="block filled">■</span>
+                <span class="block filled">■</span>
+                <span class="block filled">□</span>
+                <span class="block filled">□</span>
+                <span class="block filled">□</span>
+              </span>
+            </div>
+          </div>
+          <div class="resume-section likings-section" style="margin-top: 20px;">
+            <h2 class="section-title title-likings">Likings</h2>
+            <ul class="likings-list">
+              <li>- Fashion <span class="liking-icon">👗</span></li>
+              <li>- Skate <span class="liking-icon">🛹</span></li>
+              <li>- Rouleurs <span class="liking-icon">🛼</span></li>
+              <li>- DIY <span class="liking-icon">🛠️</span></li>
+              <li>- Guitar <span class="liking-icon">🎸</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="win-resizer" onmousedown="startResize(event, 'languages-window')" ontouchstart="startResize(event, 'languages-window')"></div>
+      </div>
+
+      <!-- ================= 3. EDUCATION WINDOW ================= -->
+      <div id="education-window" class="window" style="top: 100px; left: 26%; width: 480px; z-index: 5; display: none;">
+        <div class="window-header title-bar" onmousedown="startDrag(event, 'education-window')" ontouchstart="startDrag(event, 'education-window')">
+          <div class="title-bar-text">Education.doc</div>
+          <div class="title-bar-controls">
+            <button class="control-btn min-btn" onclick="minimizeWindow('education-window')" aria-label="Minimize"></button>
+            <button class="control-btn max-btn" onclick="maximizeWindow('education-window')" aria-label="Maximize"></button>
+            <button class="control-btn close-btn" onclick="closeWindow('education-window')" aria-label="Close"></button>
+          </div>
+        </div>
+        <div class="window-body" style="overflow-y: auto; max-height: 450px;">
+          <div class="resume-section education-section" style="margin-bottom: 0; padding: 10px;">
+            <h2 class="section-title title-education">LIFE ROADMAP</h2>
+            
+            <div class="roadmap-track" style="position: relative; padding-left: 30px; margin-top: 15px; margin-bottom: 10px;">
+              <div class="roadmap-line" style="position: absolute; left: 9px; top: 0; bottom: 0; width: 4px; background-color: var(--os-blue); border-right: 1.5px solid #a3c2ff; image-rendering: pixelated;"></div>
+              
+              <!-- 2009 -->
+              <div class="roadmap-card" onclick="highlightRoadmapCard(this, 'born')" style="position: relative; margin-bottom: 20px; background-color: #fff; border: 2.5px solid #000; border-radius: 4px; box-shadow: 4px 4px 0px rgba(0,0,0,0.15); cursor: pointer; transition: transform 0.15s, box-shadow 0.15s;">
+                <div class="roadmap-dot" style="position: absolute; left: -27px; top: 12px; width: 12px; height: 12px; border-radius: 50%; background-color: #fff; border: 3px solid var(--os-blue);"></div>
+                <div class="roadmap-header" style="background-color: #f0f5ff; border-bottom: 1.5px solid #000; padding: 4px 8px; display: flex; justify-content: space-between; align-items: center; font-family: var(--font-pixel); font-size: 0.8rem; font-weight: bold;">
+                  <span>2009</span>
+                  <span>🍼 Born</span>
+                </div>
+                <div class="roadmap-body" style="padding: 8px 12px;">
+                  <h3 style="font-family: var(--font-pixel); font-size: 0.85rem; color: var(--os-blue); margin-bottom: 4px;">EARLY DAYS</h3>
+                  <p style="font-size: 0.75rem; color: #333; line-height: 1.4; margin: 0;">Born in Morocco. Developed a passion for art and design from early childhood, sketching everything in sight.</p>
+                </div>
+              </div>
+
+              <!-- 2015 -->
+              <div class="roadmap-card" onclick="highlightRoadmapCard(this, 'elem')" style="position: relative; margin-bottom: 20px; background-color: #fff; border: 2.5px solid #000; border-radius: 4px; box-shadow: 4px 4px 0px rgba(0,0,0,0.15); cursor: pointer; transition: transform 0.15s, box-shadow 0.15s;">
+                <div class="roadmap-dot" style="position: absolute; left: -27px; top: 12px; width: 12px; height: 12px; border-radius: 50%; background-color: #fff; border: 3px solid var(--os-blue);"></div>
+                <div class="roadmap-header" style="background-color: #f0f5ff; border-bottom: 1.5px solid #000; padding: 4px 8px; display: flex; justify-content: space-between; align-items: center; font-family: var(--font-pixel); font-size: 0.8rem; font-weight: bold;">
+                  <span>2015</span>
+                  <span>🎒 School</span>
+                </div>
+                <div class="roadmap-body" style="padding: 8px 12px;">
+                  <h3 style="font-family: var(--font-pixel); font-size: 0.85rem; color: var(--os-blue); margin-bottom: 4px;">ELEMENTARY SCHOOL</h3>
+                  <p style="font-size: 0.75rem; color: #333; line-height: 1.4; margin: 0;">Began elementary studies. Explored creative drawings, reading comics, and early digital game aesthetics.</p>
+                </div>
+              </div>
+
+              <!-- 2019 -->
+              <div class="roadmap-card" onclick="highlightRoadmapCard(this, 'begin')" style="position: relative; margin-bottom: 20px; background-color: #fff; border: 2.5px solid #000; border-radius: 4px; box-shadow: 4px 4px 0px rgba(0,0,0,0.15); cursor: pointer; transition: transform 0.15s, box-shadow 0.15s;">
+                <div class="roadmap-dot" style="position: absolute; left: -27px; top: 12px; width: 12px; height: 12px; border-radius: 50%; background-color: #fff; border: 3px solid var(--os-blue);"></div>
+                <div class="roadmap-header" style="background-color: #f0f5ff; border-bottom: 1.5px solid #000; padding: 4px 8px; display: flex; justify-content: space-between; align-items: center; font-family: var(--font-pixel); font-size: 0.8rem; font-weight: bold;">
+                  <span>2019</span>
+                  <span>💻 Code</span>
+                </div>
+                <div class="roadmap-body" style="padding: 8px 12px;">
+                  <h3 style="font-family: var(--font-pixel); font-size: 0.85rem; color: var(--os-blue); margin-bottom: 4px;">DIGITAL BEGINNINGS</h3>
+                  <p style="font-size: 0.75rem; color: #333; line-height: 1.4; margin: 0;">Discovered coding, graphic tools, and video editing. Developed an interest in custom designs.</p>
+                </div>
+              </div>
+
+              <!-- 2022 -->
+              <div class="roadmap-card" onclick="highlightRoadmapCard(this, 'high')" style="position: relative; margin-bottom: 20px; background-color: #fff; border: 2.5px solid #000; border-radius: 4px; box-shadow: 4px 4px 0px rgba(0,0,0,0.15); cursor: pointer; transition: transform 0.15s, box-shadow 0.15s;">
+                <div class="roadmap-dot" style="position: absolute; left: -27px; top: 12px; width: 12px; height: 12px; border-radius: 50%; background-color: #fff; border: 3px solid var(--os-blue);"></div>
+                <div class="roadmap-header" style="background-color: #f0f5ff; border-bottom: 1.5px solid #000; padding: 4px 8px; display: flex; justify-content: space-between; align-items: center; font-family: var(--font-pixel); font-size: 0.8rem; font-weight: bold;">
+                  <span>2022</span>
+                  <span>🎓 High School</span>
+                </div>
+                <div class="roadmap-body" style="padding: 8px 12px;">
+                  <h3 style="font-family: var(--font-pixel); font-size: 0.85rem; color: var(--os-blue); margin-bottom: 4px;">HIGH SCHOOL MAJOR</h3>
+                  <p style="font-size: 0.75rem; color: #333; line-height: 1.4; margin: 0;">Chose the Mathematics Sciences (SM) stream, one of the most academically demanding high school programs. Alongside formal studies, independently studied cybersecurity, computer science, full-stack development, artificial intelligence, and fashion design, building practical skills through personal projects and continuous self-learning.
+</p>
+                </div>
+              </div>
+
+              <!-- 2025 -->
+              <div class="roadmap-card" onclick="highlightRoadmapCard(this, 'brand')" style="position: relative; margin-bottom: 20px; background-color: #fff; border: 2.5px solid #000; border-radius: 4px; box-shadow: 4px 4px 0px rgba(0,0,0,0.15); cursor: pointer; transition: transform 0.15s, box-shadow 0.15s;">
+                <div class="roadmap-dot" style="position: absolute; left: -27px; top: 12px; width: 12px; height: 12px; border-radius: 50%; background-color: #fff; border: 3px solid var(--os-blue);"></div>
+                <div class="roadmap-header" style="background-color: #f0f5ff; border-bottom: 1.5px solid #000; padding: 4px 8px; display: flex; justify-content: space-between; align-items: center; font-family: var(--font-pixel); font-size: 0.8rem; font-weight: bold;">
+                  <span>2025</span>
+                  <span>🏆 Brand & Hackathons</span>
+                </div>
+                <div class="roadmap-body" style="padding: 8px 12px;">
+                  <h3 style="font-family: var(--font-pixel); font-size: 0.85rem; color: var(--os-blue); margin-bottom: 4px;">DAYDREAM & ITRI</h3>
+                  <p style="font-size: 0.75rem; color: #333; line-height: 1.4; margin: 0;">Won 3rd place at Daydream Hackathon and 6th place at Orientino 2025. Founded 'ITRI', designing clothing styles.</p>
+                </div>
+              </div>
+
+              <!-- 2026 -->
+              <div class="roadmap-card" onclick="highlightRoadmapCard(this, 'now')" style="position: relative; margin-bottom: 5px; background-color: #fff; border: 2.5px solid #000; border-radius: 4px; box-shadow: 4px 4px 0px rgba(0,0,0,0.15); cursor: pointer; transition: transform 0.15s, box-shadow 0.15s;">
+                <div class="roadmap-dot" style="position: absolute; left: -27px; top: 12px; width: 12px; height: 12px; border-radius: 50%; background-color: #fff; border: 3px solid var(--os-blue);"></div>
+                <div class="roadmap-header" style="background-color: #f0f5ff; border-bottom: 1.5px solid #000; padding: 4px 8px; display: flex; justify-content: space-between; align-items: center; font-family: var(--font-pixel); font-size: 0.8rem; font-weight: bold;">
+                  <span>2026</span>
+                  <span>👑 Present Day</span>
+                </div>
+                <div class="roadmap-body" style="padding: 8px 12px;">
+                  <h3 style="font-family: var(--font-pixel); font-size: 0.85rem; color: var(--os-blue); margin-bottom: 4px;">ORIENTINO WINNER</h3>
+                  <p style="font-size: 0.75rem; color: #333; line-height: 1.4; margin: 0;">Placed 1st at the Orientino 2026 Hackathon! Building LLM-powered applications and web platforms.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="win-resizer" onmousedown="startResize(event, 'education-window')" ontouchstart="startResize(event, 'education-window')"></div>
+      </div>
+
+      <!-- ================= 4. SKILLS WINDOW ================= -->
+      <div id="skills-window" class="window" style="top: 140px; left: 30%; width: 500px; z-index: 5; display: none;">
+        <div class="window-header title-bar" onmousedown="startDrag(event, 'skills-window')" ontouchstart="startDrag(event, 'skills-window')">
+          <div class="title-bar-text">Skills.doc</div>
+          <div class="title-bar-controls">
+            <button class="control-btn min-btn" onclick="minimizeWindow('skills-window')" aria-label="Minimize"></button>
+            <button class="control-btn max-btn" onclick="maximizeWindow('skills-window')" aria-label="Maximize"></button>
+            <button class="control-btn close-btn" onclick="closeWindow('skills-window')" aria-label="Close"></button>
+          </div>
+        </div>
+        <div class="window-body">
+          <div style="display: grid; grid-template-columns: 45% 50%; gap: 5%;">
+            <div class="resume-section skills-section">
+              <h2 class="section-title title-skills">SKILLS</h2>
+              <div class="skills-grid" style="margin-top: 10px;">
+                <div class="skill-badge adobe-ai" title="Adobe Illustrator">Ai</div>
+                <div class="skill-badge vscode-logo" title="Visual Studio Code">
+                  <svg viewBox="0 0 24 24" width="20" height="20">
+                    <path d="M23.9,6.5L18.6,1.6c-0.4-0.4-1.1-0.4-1.5,0l-7.7,7.7l-4.1-3.2C5,5.8,4.5,5.8,4.1,6L0.4,8.2C0.1,8.4,0,8.7,0,9v6c0,0.3,0.1,0.6,0.4,0.8l3.7,2.2c0.4,0.2,0.9,0.2,1.2-0.1l4.1-3.2l7.7,7.7c0.4,0.4,1.1,0.4,1.5,0l5.3-4.9c0.2-0.2,0.3-0.5,0.3-0.8V7.3C24.2,7,24.1,6.7,23.9,6.5z M18,17.4l-4.3-4.3l4.3-4.3V17.4z" fill="currentColor"/>
+                  </svg>
+                </div>
+                <div class="skill-badge vim-logo" style="background-color:#179a17; color:#fff;" title="Vim">Vm</div>
+                <div class="skill-badge linux-logo" style="background-color:#333; color:#ffcc00;" title="Linux">Lx</div>
+                <div class="skill-badge llm-logo" style="background-color:#ff0055; color:#fff;" title="Large Language Models (LLMs)">AI</div>
+              </div>
+            </div>
+
+            <div class="skills-tree-section" style="margin-bottom: 0;">
+              <svg class="tree-lines-svg">
+                <line x1="50%" y1="25" x2="50%" y2="55" stroke="#0055ff" stroke-width="2.5" />
+                <line x1="50%" y1="80" x2="50%" y2="110" stroke="#0055ff" stroke-width="2.5" />
+                <line x1="50%" y1="135" x2="50%" y2="165" stroke="#0055ff" stroke-width="2.5" />
+                <line x1="50%" y1="190" x2="50%" y2="220" stroke="#0055ff" stroke-width="2.5" />
+              </svg>
+              <div class="tree-nodes">
+                <div class="tree-node-pill" style="width: 140px; padding: 4px 8px; font-size: 0.7rem;">
+                  <span>VIM</span>
+                </div>
+                <div class="tree-node-pill" style="width: 140px; padding: 4px 8px; font-size: 0.7rem;">
+                  <span>LINUX</span>
+                </div>
+                <div class="tree-node-pill" style="width: 140px; padding: 4px 8px; font-size: 0.7rem;">
+                  <span>VS CODE</span>
+                </div>
+                <div class="tree-node-pill" style="width: 140px; padding: 4px 8px; font-size: 0.7rem;">
+                  <span>ILLUSTRATOR</span>
+                </div>
+                <div class="tree-node-pill" style="width: 140px; padding: 4px 8px; font-size: 0.7rem;">
+                  <span>LLMS</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="win-resizer" onmousedown="startResize(event, 'skills-window')" ontouchstart="startResize(event, 'skills-window')"></div>
+      </div>
+
+      <!-- ================= 5. EXPERIENCE WINDOW ================= -->
+      <div id="experience-window" class="window" style="top: 180px; left: 34%; width: 480px; z-index: 5; display: none;">
+        <div class="window-header title-bar" onmousedown="startDrag(event, 'experience-window')" ontouchstart="startDrag(event, 'experience-window')">
+          <div class="title-bar-text">Experience.doc</div>
+          <div class="title-bar-controls">
+            <button class="control-btn min-btn" onclick="minimizeWindow('experience-window')" aria-label="Minimize"></button>
+            <button class="control-btn max-btn" onclick="maximizeWindow('experience-window')" aria-label="Maximize"></button>
+            <button class="control-btn close-btn" onclick="closeWindow('experience-window')" aria-label="Close"></button>
+          </div>
+        </div>
+        <div class="window-body" style="display: grid; grid-template-columns: 55% 42%; gap: 3%;">
+          <div class="resume-section worked-section" style="margin-bottom: 0;">
+            <h2 class="section-title title-worked">EXPERIENCE</h2>
+            <ul class="worked-list">
+              <li style="margin-bottom: 8px;">ORIENTINO HACKATHON 2026<br><span style="font-size:0.75rem; color:#666;">1ST PLACE winner</span></li>
+              <li style="margin-bottom: 8px;">DAYDREAM HACKATHON<br><span style="font-size:0.75rem; color:#666;">3RD PLACE winner</span></li>
+              <li style="margin-bottom: 8px;">ORIENTINO HACKATHON 2025<br><span style="font-size:0.75rem; color:#666;">6TH PLACE winner</span></li>
+              <li style="margin-bottom: 8px;">VIDEO EDITOR / PRODUCER<br><span style="font-size:0.75rem; color:#666;">Freelance Editing</span></li>
+              <li>CLOTHING DESIGNER - ITRI BRAND<br><span style="font-size:0.75rem; color:#666;">Fashion Designer & Creator</span></li>
+            </ul>
+          </div>
+
+          <div class="qr-portfolio-section" style="justify-content: center; align-items: center; margin-top: 10px;">
+            <div class="portfolio-here-text" style="font-size: 0.9rem; text-align: center;">PORTFOLIO</div>
+            <div class="qr-code-wrapper" style="width: 80px; height: 80px;">
+              <svg viewBox="0 0 100 100" class="qr-code-svg">
+                <rect width="100" height="100" fill="#FFF"/>
+                <rect x="10" y="10" width="30" height="30" fill="#000"/>
+                <rect x="15" y="15" width="20" height="20" fill="#FFF"/>
+                <rect x="20" y="20" width="10" height="10" fill="#000"/>
+                <rect x="60" y="10" width="30" height="30" fill="#000"/>
+                <rect x="65" y="15" width="20" height="20" fill="#FFF"/>
+                <rect x="70" y="20" width="10" height="10" fill="#000"/>
+                <rect x="10" y="60" width="30" height="30" fill="#000"/>
+                <rect x="15" y="65" width="20" height="20" fill="#FFF"/>
+                <rect x="20" y="70" width="10" height="10" fill="#000"/>
+                <rect x="70" y="70" width="15" height="15" fill="#000"/>
+                <rect x="75" y="75" width="5" height="5" fill="#FFF"/>
+                
+                <rect x="45" y="15" width="5" height="10" fill="#000"/>
+                <rect x="50" y="10" width="5" height="5" fill="#000"/>
+                <rect x="45" y="30" width="10" height="5" fill="#000"/>
+                <rect x="15" y="45" width="10" height="5" fill="#000"/>
+                <rect x="10" y="50" width="5" height="5" fill="#000"/>
+                <rect x="25" y="50" width="5" height="10" fill="#000"/>
+                <rect x="45" y="45" width="15" height="15" fill="#000"/>
+                <rect x="50" y="50" width="5" height="5" fill="#FFF"/>
+                <rect x="65" y="45" width="5" height="10" fill="#000"/>
+                <rect x="45" y="65" width="5" height="15" fill="#000"/>
+                <rect x="50" y="75" width="15" height="5" fill="#000"/>
+                <rect x="60" y="60" width="10" height="10" fill="#000"/>
+                <rect x="65" y="65" width="5" height="5" fill="#FFF"/>
+                <rect x="45" y="85" width="15" height="5" fill="#000"/>
+                <rect x="75" y="60" width="10" height="5" fill="#000"/>
+                <rect x="85" y="45" width="5" height="15" fill="#000"/>
+              </svg>
+              <div class="yellow-arrow-indicator" style="top: -20px; left: -45px;">
+                <svg viewBox="0 0 100 100" width="50" height="50">
+                  <path d="M80,20 Q60,10 40,30 Q20,50 30,75" fill="none" stroke="#FFDD00" stroke-width="7" stroke-linecap="round"/>
+                  <path d="M20,65 L30,75 L38,60" fill="none" stroke="#FFDD00" stroke-width="7" stroke-linecap="round"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="win-resizer" onmousedown="startResize(event, 'experience-window')" ontouchstart="startResize(event, 'experience-window')"></div>
+      </div>
+
+      <!-- ================= 6. CONTACT WINDOW ================= -->
+      <div id="contact-window" class="window" style="top: 220px; left: 38%; width: 440px; z-index: 5; display: none;">
+        <div class="window-header title-bar" onmousedown="startDrag(event, 'contact-window')" ontouchstart="startDrag(event, 'contact-window')">
+          <div class="title-bar-text">Contact.doc</div>
+          <div class="title-bar-controls">
+            <button class="control-btn min-btn" onclick="minimizeWindow('contact-window')" aria-label="Minimize"></button>
+            <button class="control-btn max-btn" onclick="maximizeWindow('contact-window')" aria-label="Maximize"></button>
+            <button class="control-btn close-btn" onclick="closeWindow('contact-window')" aria-label="Close"></button>
+          </div>
+        </div>
+        <div class="window-body">
+          <h2 class="section-title">GET IN TOUCH</h2>
+          <div class="contact-details" style="font-size: 0.95rem; gap: 8px; margin-bottom: 20px;">
+            <div class="contact-item">
+              <span class="contact-icon" style="font-size: 1.1rem;">📞</span> <strong>Phone:</strong> +212 (07)-1565-6914
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon" style="font-size: 1.1rem;">✉️</span> <strong>Email:</strong> mouadajouhi1@gmail.com
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon" style="font-size: 1.1rem;">📍</span> <strong>Location:</strong> Agadir, Morocco
+            </div>
+          </div>
+
+          <h2 class="section-title">FIND ME ONLINE</h2>
+          <div class="resume-section socials-section" style="flex-direction: row; gap: 15px; margin-bottom: 0;">
+            <a href="https://www.instagram.com/mouad_.ajh/" target="_blank" class="social-link" style="font-size: 1rem;">
+              <span class="social-icon ig-icon" style="width: 32px; height: 32px;">
+                <svg viewBox="0 0 24 24" width="20" height="20">
+                  <rect x="2" y="2" width="20" height="20" rx="5" fill="none" stroke="currentColor" stroke-width="2.5"/>
+                  <circle cx="12" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="2.5"/>
+                  <circle cx="18" cy="6" r="1.5" fill="currentColor"/>
+                </svg>
+              </span>
+              <span>@mouad_.ajh</span>
+            </a>
+          </div>
+        </div>
+        <div class="win-resizer" onmousedown="startResize(event, 'contact-window')" ontouchstart="startResize(event, 'contact-window')"></div>
+      </div>
+
+      <!-- ================= 7. DISPLAY SETTINGS WINDOW (WALLPAPERS) ================= -->
+      <div id="theme-window" class="window" style="top: 210px; left: 15%; width: 440px; height: 360px; z-index: 5; display: none;">
+        <div class="window-header title-bar" onmousedown="startDrag(event, 'theme-window')" ontouchstart="startDrag(event, 'theme-window')">
+          <div class="title-bar-text">Display Settings</div>
+          <div class="title-bar-controls">
+            <button class="control-btn min-btn" onclick="minimizeWindow('theme-window')" aria-label="Minimize"></button>
+            <button class="control-btn max-btn" onclick="maximizeWindow('theme-window')" aria-label="Maximize"></button>
+            <button class="control-btn close-btn" onclick="closeWindow('theme-window')" aria-label="Close"></button>
+          </div>
+        </div>
+        <div class="window-body" style="background-color: #ece9d8; display: flex; flex-direction: column; gap: 12px; height: calc(100% - 30px);">
+          <div style="background-color: #fff; border: 2px inset #999; padding: 12px; display: flex; align-items: center; justify-content: space-between; border-radius: 2px;">
+            <div style="font-family: var(--font-pixel); font-size: 0.9rem; font-weight: bold; color: var(--os-blue);">Desktop Wallpapers</div>
+            <button onclick="nextWallpaper()" style="font-family: var(--font-pixel); font-weight: bold; font-size: 0.8rem; padding: 6px 12px; background: linear-gradient(to bottom, #fff 0%, #ddd 100%); border: 1.5px solid #000; box-shadow: 2px 2px 0px #333; cursor: pointer;">[ Next Background ]</button>
+          </div>
+          
+          <div style="flex-grow: 1; overflow-y: auto; background-color: #fff; border: 2px inset #999; padding: 8px; border-radius: 2px;">
+            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px;" id="wallpaper-gallery">
+              <div class="wallpaper-thumb-card" data-wallpaper="assets/win.jpg" onclick="changeWallpaper('assets/win.jpg')">
+                <div class="thumb-preview" style="background-image: url('assets/win.jpg');"></div>
+                <div class="thumb-label">win.jpg</div>
+              </div>
+              <div class="wallpaper-thumb-card" data-wallpaper="assets/img8.jpg" onclick="changeWallpaper('assets/img8.jpg')">
+                <div class="thumb-preview" style="background-image: url('assets/img8.jpg');"></div>
+                <div class="thumb-label">img8.jpg</div>
+              </div>
+              <div class="wallpaper-thumb-card" data-wallpaper="assets/img13.jpg" onclick="changeWallpaper('assets/img13.jpg')">
+                <div class="thumb-preview" style="background-image: url('assets/img13.jpg');"></div>
+                <div class="thumb-label">img13.jpg</div>
+              </div>
+              <div class="wallpaper-thumb-card" data-wallpaper="assets/img24.jpg" onclick="changeWallpaper('assets/img24.jpg')">
+                <div class="thumb-preview" style="background-image: url('assets/img24.jpg');"></div>
+                <div class="thumb-label">img24.jpg</div>
+              </div>
+              <div class="wallpaper-thumb-card" data-wallpaper="assets/bridge-windows-7-desktop1.jpg" onclick="changeWallpaper('assets/bridge-windows-7-desktop1.jpg')">
+                <div class="thumb-preview" style="background-image: url('assets/bridge-windows-7-desktop1.jpg');"></div>
+                <div class="thumb-label">Bridge.jpg</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="win-resizer" onmousedown="startResize(event, 'theme-window')" ontouchstart="startResize(event, 'theme-window')"></div>
+      </div>
+
+      <!-- ================= PLAYABLE RETRO PAINT WINDOW ================= -->
+      <div id="paint-window" class="window" style="top: 260px; left: 15%; width: 500px; height: 420px; z-index: 5; display: none;">
+        <div class="window-header title-bar" onmousedown="startDrag(event, 'paint-window')" ontouchstart="startDrag(event, 'paint-window')">
+          <div class="title-bar-text">Retro Paint - [Untitled]</div>
+          <div class="title-bar-controls">
+            <button class="control-btn min-btn" onclick="minimizeWindow('paint-window')" aria-label="Minimize"></button>
+            <button class="control-btn max-btn" onclick="maximizeWindow('paint-window')" aria-label="Maximize"></button>
+            <button class="control-btn close-btn" onclick="closeWindow('paint-window')" aria-label="Close"></button>
+          </div>
+        </div>
+        <div class="window-body paint-body">
+          <div class="paint-toolbar">
+            <button class="tool-btn active-tool" id="tool-pencil" onclick="setPaintTool('pencil')" title="Pencil">✏️</button>
+            <button class="tool-btn" id="tool-brush" onclick="setPaintTool('brush')" title="Brush">🖌️</button>
+            <button class="tool-btn" id="tool-eraser" onclick="setPaintTool('eraser')" title="Eraser">🧼</button>
+            <button class="tool-btn" id="tool-clear" onclick="clearCanvas()" title="Clear Canvas">🗑️</button>
+            <div class="paint-color-picker">
+              <span class="color-swatch active-color" style="background-color: #000000;" onclick="setPaintColor('#000000', this)"></span>
+              <span class="color-swatch" style="background-color: #ff0055;" onclick="setPaintColor('#ff0055', this)"></span>
+              <span class="color-swatch" style="background-color: #00ccff;" onclick="setPaintColor('#00ccff', this)"></span>
+              <span class="color-swatch" style="background-color: #00cc55;" onclick="setPaintColor('#00cc55', this)"></span>
+              <span class="color-swatch" style="background-color: #ffaa00;" onclick="setPaintColor('#ffaa00', this)"></span>
+              <span class="color-swatch" style="background-color: #ffffff;" onclick="setPaintColor('#ffffff', this)"></span>
+            </div>
+          </div>
+          <div class="canvas-container">
+            <canvas id="paint-canvas" width="480" height="320"></canvas>
+          </div>
+        </div>
+        <div class="win-resizer" onmousedown="startResize(event, 'paint-window')" ontouchstart="startResize(event, 'paint-window')"></div>
+      </div>
+
+      <!-- ================= WINAMP MUSIC PLAYER WINDOW ================= -->
+      <div id="music-window" class="window" style="top: 290px; left: 20%; width: 320px; z-index: 5; display: none;">
+        <div class="window-header title-bar" onmousedown="startDrag(event, 'music-window')" ontouchstart="startDrag(event, 'music-window')">
+          <div class="title-bar-text">WINAMP - 8-Bit Chiptuner</div>
+          <div class="title-bar-controls">
+            <button class="control-btn min-btn" onclick="minimizeWindow('music-window')" aria-label="Minimize"></button>
+            <button class="control-btn max-btn" onclick="maximizeWindow('music-window')" aria-label="Maximize"></button>
+            <button class="control-btn close-btn" onclick="closeWindow('music-window')" aria-label="Close"></button>
+          </div>
+        </div>
+        <div class="window-body music-body">
+          <div class="winamp-display">
+            <div class="winamp-song-title" id="song-title">NO SONG LOADED</div>
+            <div class="winamp-time" id="song-time">00:00</div>
+            <div class="winamp-visualizer">
+              <span class="bar bar-1"></span>
+              <span class="bar bar-2"></span>
+              <span class="bar bar-3"></span>
+              <span class="bar bar-4"></span>
+              <span class="bar bar-5"></span>
+              <span class="bar bar-6"></span>
+              <span class="bar bar-7"></span>
+              <span class="bar bar-8"></span>
+            </div>
+          </div>
+          <div class="winamp-controls">
+            <button class="winamp-btn" id="winamp-prev" onclick="playPrevTrack()">|&lt;&lt;</button>
+            <button class="winamp-btn" id="winamp-play" onclick="togglePlayMusic()">PLAY</button>
+            <button class="winamp-btn" id="winamp-stop" onclick="stopMusic()">STOP</button>
+            <button class="winamp-btn" id="winamp-next" onclick="playNextTrack()">&gt;&gt;|</button>
+          </div>
+          <div class="winamp-playlist">
+            <div class="playlist-item active-track" onclick="selectTrack(0)">1. Chiptune Symphony.synth</div>
+            <div class="playlist-item" onclick="selectTrack(1)">2. Pixelated Dreams.synth</div>
+            <div class="playlist-item" onclick="selectTrack(2)">3. Blissful Hillside.synth</div>
+          </div>
+        </div>
+        <div class="win-resizer" onmousedown="startResize(event, 'music-window')" ontouchstart="startResize(event, 'music-window')"></div>
+      </div>
+
+      <!-- ================= README TEXT WINDOW ================= -->
+      <div id="readme-window" class="window" style="top: 320px; left: 24%; width: 450px; height: 350px; z-index: 5; display: none;">
+        <div class="window-header title-bar" onmousedown="startDrag(event, 'readme-window')" ontouchstart="startDrag(event, 'readme-window')">
+          <div class="title-bar-text">README.txt - Notepad</div>
+          <div class="title-bar-controls">
+            <button class="control-btn min-btn" onclick="minimizeWindow('readme-window')" aria-label="Minimize"></button>
+            <button class="control-btn max-btn" onclick="maximizeWindow('readme-window')" aria-label="Maximize"></button>
+            <button class="control-btn close-btn" onclick="closeWindow('readme-window')" aria-label="Close"></button>
+          </div>
+        </div>
+        <div class="window-body readme-text-body">
+          <textarea readonly class="readme-textarea">
+==================================================
+        WELCOME TO RETRO DEKTOP PORTFOLIO
+==================================================
+Author: Mouad Ajouhi
+Role: Full-Stack Developer / Cybersecurity Enthusiast / AI Engineer / Game Developer
+Created: June 2026
+OS: RetroOS 9.21
+
+ABOUT THIS SYSTEM:
+
+* This is a fully interactive desktop portfolio showcasing my projects, technical skills, and professional journey.
+* The interface recreates the nostalgic 8-bit and 90s operating system experience with draggable windows, retro animations, custom cursors, and interactive desktop applications.
+* Explore my work in software engineering, artificial intelligence, cybersecurity, game development, UI/UX design, and creative digital projects.
+
+INSTRUCTIONS:
+
+1. Double-click any desktop icon or use the Taskbar to open or restore applications.
+2. Drag windows by their blue Title Bar to organize your workspace.
+3. Click inside any window to bring it to the front.
+4. Visit the Projects app to explore my latest work.
+5. Open the Terminal to discover interactive commands and hidden features.
+6. Check out the Portfolio and About apps to learn more about my experience and ambitions.
+
+FEATURED SKILLS:
+
+* Full-Stack Web Development
+* Cybersecurity & Ethical Hacking
+* Artificial Intelligence & Automation
+* Python, JavaScript, C#, C++, Java
+* React, HTML, CSS, PHP
+* Unity Game Development
+* UI/UX Design
+* 3D Design & Digital Creativity
+
+CONTACT & SOCIALS:
+
+* Name: Mouad Ajouhi
+* Email: [your@email.com](mailto:your@email.com)
+* GitHub: github.com/yourusername
+* LinkedIn: linkedin.com/in/yourusername
+* Portfolio: yourwebsite.com
+
+Thank you for visiting! Have fun exploring the desktop and discovering my work.
+
+          </textarea>
+        </div>
+        <div class="win-resizer" onmousedown="startResize(event, 'readme-window')" ontouchstart="startResize(event, 'readme-window')"></div>
+      </div>
+
+    </div>
+
+    <!-- Desktop Taskbar -->
+    <div class="taskbar">
+      <!-- Start Button -->
+      <button class="start-btn" id="start-btn" onclick="toggleStartMenu()">
+        <svg viewBox="0 0 100 100" class="start-icon">
+          <path d="M10,10 L45,15 L45,45 L10,40 Z" fill="#F25022" />
+          <path d="M55,16 L90,21 L90,46 L55,45 Z" fill="#7FBA00" />
+          <path d="M10,48 L45,47 L45,77 L10,82 Z" fill="#00A4EF" />
+          <path d="M55,48 L90,49 L90,75 L55,76 Z" fill="#FFB900" />
+        </svg>
+        <span>Start</span>
+      </button>
+
+      <!-- Taskbar Tabs Container (shows open windows) -->
+      <div class="taskbar-tabs" id="taskbar-tabs">
+        <!-- Will be populated dynamically by JS -->
+      </div>
+
+      <!-- System Tray (Clock and utilities) -->
+      <div class="system-tray">
+        <span class="tray-icon" title="Audio">🔊</span>
+        <span class="tray-icon" title="Network Connected">🌐</span>
+        <span id="system-clock" class="system-clock">10:24 AM</span>
+      </div>
+    </div>
+
+    <!-- Start Menu Popup -->
+    <div class="start-menu" id="start-menu" style="display: none;">
+      <div class="start-menu-sidebar">
+        <span class="sidebar-text">Retro<b>OS</b></span>
+      </div>
+      <div class="start-menu-items">
+        <div class="start-item" onclick="openWindow('welcome-window')">
+          <span class="item-icon">📄</span> Welcome.doc
+        </div>
+        <div class="start-item" onclick="openWindow('languages-window')">
+          <span class="item-icon">📄</span> Languages.doc
+        </div>
+        <div class="start-item" onclick="openWindow('education-window')">
+          <span class="item-icon">📄</span> Education.doc
+        </div>
+        <div class="start-item" onclick="openWindow('skills-window')">
+          <span class="item-icon">📄</span> Skills.doc
+        </div>
+        <div class="start-item" onclick="openWindow('experience-window')">
+          <span class="item-icon">📄</span> Experience.doc
+        </div>
+        <div class="start-item" onclick="openWindow('contact-window')">
+          <span class="item-icon">📄</span> Contact.doc
+        </div>
+        <div class="start-item" onclick="downloadCV()">
+          <span class="item-icon">📄</span> CV.pdf
+        </div>
+        <div class="start-item" onclick="openWindow('theme-window')">
+          <span class="item-icon">⚙️</span> Display Settings
+        </div>
+        <hr class="start-divider">
+        <div class="start-item" onclick="openWindow('paint-window')">
+          <span class="item-icon">🎨</span> Retro Paint
+        </div>
+        <div class="start-item" onclick="openWindow('music-window')">
+          <span class="item-icon">📻</span> Winamp Player
+        </div>
+        <div class="start-item" onclick="openWindow('readme-window')">
+          <span class="item-icon">📝</span> Readme.txt
+        </div>
+        <hr class="start-divider">
+        <div class="start-item" onclick="restartSystem()">
+          <span class="item-icon">🔄</span> Restart System
+        </div>
+        <div class="start-item" onclick="shutdownSystem()">
+          <span class="item-icon">🔌</span> Shut Down...
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>
